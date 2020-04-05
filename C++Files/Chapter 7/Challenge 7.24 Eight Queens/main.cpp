@@ -1,4 +1,5 @@
 #include "QueensEight.h"
+#include <cstdio>
 
 using namespace std;
 
@@ -18,5 +19,6 @@ int main() {
 		cout << "Square: " << i << "		Active: " << queensEight.getBoard()[i] << endl;
 	}
 	*/
+	getchar();
 	return 0;
 }
