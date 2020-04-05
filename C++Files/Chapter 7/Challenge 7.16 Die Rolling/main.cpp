@@ -2,6 +2,7 @@
 #include <iomanip>  //output manipulation
 #include <ctime>  //Time(NULL)
 #include <stdlib.h> //srand
+#incldue <cstdio>
 #include <fstream>  //Wrtting to file
 
 using namespace std;
@@ -12,6 +13,7 @@ void finalCalculations(int i_Appearances[12]);
 int main() {
   srand(time(NULL));  //Seed random
   rollDie(0); //Begin recursion
+  getchar();
   return 0;
 } //End main()
 
@@ -19,13 +21,13 @@ void rollDie(int iterations){
   int i_Die;
   static int i_Appearances[12] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-  i_Die = (rand() % 6 - 0) + 1; //Range 0 - 5, add 1. Die roll 1
-  i_Die += (rand() % 6 - 0) + 1;  //Second die roll
+  i_Die = (rand() % 6 + 1); //Range 0 - 5, add 1. Die roll 1
+  i_Die += (rand() % 6 + 1);  //Second die roll
   
   i_Appearances[i_Die - 1] += 1;  //Taly the numbers appearances
 
   iterations++; //Recursion iteration track
-  if(iterations <= 36000)  //Roll 36000 times
+  if(iterations <= 36000)  //Roll 36000 times. this many iterations will make visual studio very unhappy. But works in repl.it
     rollDie(iterations);  //Continue reccursion
   else{
     finalCalculations(i_Appearances); //Final calculations
