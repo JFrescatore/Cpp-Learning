@@ -3,4 +3,5 @@
 
 
 **Afterwards**
+
 While completing this challenge, I created the Pari3D to hold three vital variables. However, I knew this was not the best way to do this, so I went with it for this challenge and in the next two challenges I attempted different ways to complete this type of challenge. 
