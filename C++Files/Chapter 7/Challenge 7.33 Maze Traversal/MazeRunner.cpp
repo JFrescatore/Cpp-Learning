@@ -148,26 +148,30 @@ inline void MazeRunner::getDirectionalOffsets(int& x_Offset, int& y_Offset, int 
 	}	//Directional offset, used to "rotate"
 }	//End getDirectionalOffsets(int&, int&, int)
 /*
-																Procedure:
-														----1: Check Right for wall----
-														|							  |
-							----2.a: If wall, check forwad----					2.b: If empty, move right. Restart
-							|								 |								
-3.a: If clear, advance forward. Restart		----3.b: If blocked, look left----
-											|								 |
-						4.a: If clear, advance left. Restart			4.b: If blocked advance back. Restart
+								Procedure:
+							|----1: Check Right for wall----|
+							|				|
+							|				|
+					|----2.a: If wall, check forwad----|	2.b: If empty, move right. Restart	
+					|			  	   |
+					|				   |
+			|----3.Z: If blocked, look left----|	3.b: If clear, advance forward. Restart		
+			|				   |
+			|				   |
+      4.a: If clear, advance left. Restart	4.b: If blocked advance back. Restart
 
-***Failure Condition: If forward direction is [3] while on start position, failure. This is NOT the most efficient way, just the way the book told to do.*** 
+
+***Failure Condition: If forward direction is [3] while on start position, failure.*** 
 ***Win Condition: computer reaches the exit position
-	
+
 Each time the computer advances, the "forward" becomes the direction it turned.
 EX: Forward is up [0, 1], right is [1, 0]. If computer advances to the right then forward is now [1, 0] and right becomes [0, -1]
 
-	<Direction>[Coords][Short Hand]
+<Direction>[Coords][Short Hand]
 
-			Up [0, 1][2]
-Left [-1, 0][3]	 .	Right [1, 0][1]
-			Down [0, -1][0]
+		Up [0, 1][2]
+Left [-1, 0][3]	 	.	Right [1, 0][1]
+		Down [0, -1][0]
 */
 
 inline void MazeRunner::printMaze() {
