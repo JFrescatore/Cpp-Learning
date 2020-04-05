@@ -1,0 +1,33 @@
+Sum of 2 Appeared (1035) times.
+    Chance to appear: 2.88%
+
+Sum of 3 Appeared (1957) times.
+    Chance to appear: 5.44%
+
+Sum of 4 Appeared (2995) times.
+    Chance to appear: 8.32%
+
+Sum of 5 Appeared (3968) times.
+    Chance to appear: 11.02%
+
+Sum of 6 Appeared (4998) times.
+    Chance to appear: 13.88%
+
+Sum of 7 Appeared (5953) times.
+    Chance to appear: 16.54%
+
+Sum of 8 Appeared (5014) times.
+    Chance to appear: 13.93%
+
+Sum of 9 Appeared (3990) times.
+    Chance to appear: 11.08%
+
+Sum of 10 Appeared (3010) times.
+    Chance to appear: 8.36%
+
+Sum of 11 Appeared (2092) times.
+    Chance to appear: 5.81%
+
+Sum of 12 Appeared (989) times.
+    Chance to appear: 2.75%
+
